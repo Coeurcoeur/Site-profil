@@ -1,6 +1,6 @@
 @charset "utf-8";
 /* CSS Document */
-body{padding:0;margin:0;background-color:#FDF2E9;}
+body{padding:0;margin:0;background-color:#fff;}
 a{text-decoration:none;}
 h1{font-family:'Roboto', sans-serif;}
 h2{font-family:'Spectral', serif;}
@@ -14,6 +14,11 @@ li{list-style-type:none;}
 	flex:1;
 }
 
+.contenu{
+	margin:80px;
+	box-shadow:2px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
 .menu{
 	position:fixed;
 	width:50px;
@@ -22,7 +27,7 @@ li{list-style-type:none;}
 }
 
 .fond{
-	background-color:#5499C7;
+	background-color:#FDF2E9;
 	height:250px;
 }
 .bloc_bleu{
@@ -32,10 +37,10 @@ li{list-style-type:none;}
 
 .profil{
 	width:300px;
-	margin-left:300px;
+	margin:auto;
 }
 	.photo{
-		margin-top:-140px;
+		margin-top:-180px;
 		background-color:aqua;
 		width:270px;
 		height:270px;
@@ -49,17 +54,18 @@ li{list-style-type:none;}
 
 .presentation{
 	flex:1;
-	margin-top:-155px;
-	margin-left:15px;
-	padding-right:200px;
+	margin:auto;
+	width:700px;
 }
 	.presentation .name{
-		color:#fff;
+		color:#333;
 		font-size:1.7em;
+		text-align: center;
 	}
 	.presentation .spe{
-		color:#fff;
+		color:#333;
 		margin-top:-30px;
+		text-align: center;
 	}
 	.contact{
 		padding-left:30px;
