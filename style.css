@@ -1,11 +1,15 @@
 @charset "utf-8";
-/* CSS Document */html{scroll-behavior: smooth;}
+/* CSS Document */html{scroll-behavior:smooth;}
 body{padding:0;margin:0;background-color:#fff;}
 a{text-decoration:none;}
 h1{font-family:'Roboto', sans-serif;}
 h2{font-family:'Spectral', serif;}
 p{font-family:'Spectral', serif;}
 li{list-style-type:none;}
+
+.contain{
+	overflow:hidden;
+}
 
 .flex{
 	display:flex;
@@ -14,77 +18,59 @@ li{list-style-type:none;}
 	flex:1;
 }
 
-.contenu{
-	margin:30px 80px;
-	box-shadow:2px 2px 16px rgba(0, 0, 0, 0.3);
-	background-color:#FDF2E9;
+.diago_1{
+	background-color:lightblue;
+    transform: rotate(-7deg);
+    width:150%;
+    height: 400px;
+	margin-left:-25%;
+	margin-top:-200px;
+	z-index:100;
+}
+.diago_2{
+	background-color:lightblue;
+    transform: rotate(-7deg);
+    width:150%;
+    height:auto;
+	padding:100px 0;
+	margin-left:-25%;
+	margin-top:120px;
+}
+.photo-pro{
+	width:230px;
+	height:230px;
+	border-radius:10px;
+	border:10px solid #fff;
+	position:relative;
+	margin-left:200px;
+	margin-top:-70px;
+}
+.photo-pro img{
+	width:100%;
+}
+.name h1{
+	color:#333;
+	transform: rotate(-7deg);
+	position:relative;
+	font-size:4em;
+	top:-165px;
+	left:60px;
+}
+.fonction h1{
+	color:#333;
+	transform: rotate(-7deg);
+	position:relative;
+	font-size:1.3em;
+	top:-190px;
+	left:72px;
 }
 
-.top{
-	padding:30px;
-}
-
-.menu{
-	position:fixed;
-	width:40px;
-	height:200px;
-	background-color:rgba(20, 20, 20, 0.95);
-}
-
-.fond{
-	background-color:#FDF2E9;
-	height:250px;
-}
-.bloc{
-	padding:50px 0;
-	margin-top:50px;
-}
-
-.profil{
-	width:300px;
+.bio{
+	padding:0 210px;
 	margin:auto;
 }
-	.photo{
-		background-color:aqua;
-		width:270px;
-		height:270px;
-		border-radius:50%;
-		overflow:hidden;
-		border:10px solid #FDF2E9;
-	}
-	.photo img{
-		width:135%;
-	}
-
-.presentation{
-	flex:1;
-	margin:auto;
-	width:700px;
-}
-	.presentation .name{
-		color:#333;
-		font-size:1.7em;
-		text-align: center;
-	}
-	.presentation .spe{
-		color:#333;
-		margin-top:-30px;
-		text-align: center;
-	}
-	.contact{
-		padding-left:30px;
-	}
-	.contact i{
-		font-size:1.3em;
-		margin-top:10px;
-	}
-	.contact span{
-		color:#333;
-		margin-left:15px;
-	}
-
 .bloc_lien{
-	margin:0 300px 0 300px;
+	margin-top:70px;
 }
 	.bloc_lien li{
 		display:inline-block;
@@ -106,6 +92,124 @@ li{list-style-type:none;}
 		text-align: center
 	}
 
-.title{
-	text-align: center;
+.menu{
+	width:38px;
+	background-color:#333;
+	position:fixed;
+	top:130px;
+	padding:2px 0;
 }
+	.menu ul, .menu li{
+		padding:0;
+		margin:0;
+		text-align: center;
+		width:35px;
+		padding:12px 0;
+	}
+	.menu i{
+		color:#fff;
+		font-size:1.5em;
+	}
+	.bulle{		
+		margin-left:38px;
+		width:0;
+		position:absolute;
+		overflow:hidden;
+		transition:0.2s all ease-out;
+	}
+		.bulle_pro{top:24px;}
+		.bulle_real{top:76px;}
+		.bulle_cont{top:125px;}
+		.name_bulle{
+			width:80px;
+			text-align: center;
+			background-color:#333;
+			color:#fff;
+			padding:3px 0 2px 0;
+		}
+		.triangle{
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-width: 13px 12px 13px 0;
+			border-color: transparent #333333 transparent transparent;
+		}
+		.menu li:hover .bulle{
+			width:120px;
+			transition:0.2s all ease-in;
+		}
+
+.titre_section{
+	font-family:'Roboto', sans-serif;
+	width:250px;
+	position:relative;
+	left:28%;
+	margin-bottom:100px;
+	text-align: center;
+	font-size:2.5em;
+}
+.contenu_section{
+	transform: rotate(7deg);
+	margin:50px 25%;
+}
+	.contenu_section > div{
+		margin:50px 0;
+	}
+	.contenu_section h3{
+		font-family:'Roboto', sans-serif;
+		font-size:1.5em;
+	}
+	.txt_pres_droit{
+		padding:10px;
+		color:#333;
+		font-size:1.1em;
+	}
+	.txt_pres_gauche{
+		padding:10px;
+		color:#333;
+		font-size:1.1em;
+		text-align: right;
+	}
+	.image_pres{
+		padding:30px 40px;
+	}
+	.image_pres img{
+		width:100%;
+	}
+
+.contact{
+	margin-top:100px;
+	margin-bottom:100px;
+	padding:0 210px;
+}
+	.carte{
+		box-shadow:2px 2px 12px rgba(0, 0, 0, 0.5);
+		filter: grayscale(100)
+	}
+	.position{
+		margin-left:100px;
+	}
+	.position i{
+		font-size:3em;
+		color:#333;
+	}
+	.position_indication{
+		font-size:1.2em;
+		color:#333;
+		padding:0 20px;
+	}
+	.info_contact{
+		margin-left:55px;
+		margin-top:100px;
+	}
+	.info_contact i{
+		font-size:1.6em;
+		color:#333;
+	}
+	.info_contact li{
+		padding:10px;
+	}
+	.info_contact span{
+		padding:20px;
+		font-size:1.2em;
+	}
