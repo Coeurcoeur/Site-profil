@@ -1,10 +1,17 @@
 @charset "utf-8";
-/* CSS Document */html{scroll-behavior:smooth;}
+/* CSS Document */
+html{scroll-behavior:smooth;}
 body{padding:0;margin:0;background-color:#fff;}
-a{text-decoration:none;}
+a{
+	text-decoration:none;
+	color:#333;
+}
+a:hover{
+	color:#5499C7;
+}
 h1{font-family:'Roboto', sans-serif;}
 h2{font-family:'Spectral', serif;}
-p{font-family:'Spectral', serif;}
+p{font-family: 'Spectral', serif;}
 li{list-style-type:none;}
 
 .contain{
@@ -117,9 +124,15 @@ li{list-style-type:none;}
 		overflow:hidden;
 		transition:0.2s all ease-out;
 	}
-		.bulle_pro{top:24px;}
-		.bulle_real{top:76px;}
-		.bulle_cont{top:125px;}
+		.bulle_pro{
+			top:24px;
+		}
+		.bulle_real{
+			top:76px;
+		}
+		.bulle_cont{
+			top:125px;
+		}
 		.name_bulle{
 			width:80px;
 			text-align: center;
