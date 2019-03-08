@@ -46,6 +46,7 @@ li{list-style-type:none;}
 .photo-pro{
 	width:230px;
 	height:230px;
+	overflow:hidden;
 	border-radius:10px;
 	border:10px solid #fff;
 	position:relative;
@@ -54,6 +55,7 @@ li{list-style-type:none;}
 }
 .photo-pro img{
 	width:100%;
+	margin-top:-30px;
 }
 .name h1{
 	color:#333;
